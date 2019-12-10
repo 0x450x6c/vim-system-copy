@@ -50,6 +50,18 @@ And to declare custom paste command use:
 let g:system_copy#paste_command='xclip -sel clipboard -o'
 ```
 
+You can disable default mappings, and declare custom mappings:
+```
+let g:system_copy_disable_default_mappings = 1
+
+nmap <leader>p <Plug>SystemCopy
+xmap <leader>p <Plug>SystemCopy
+nmap <leader>P <Plug>SystemCopyLine
+nmap <leader>v <Plug>SystemPaste
+xmap <leader>v <Plug>SystemPaste
+nmap <leader>V <Plug>SystemPasteLine
+```
+
 Installation
 ------------
 
